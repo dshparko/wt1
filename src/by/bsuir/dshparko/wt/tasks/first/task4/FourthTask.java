@@ -1,30 +1,33 @@
-package by.bsuir.dshparko.wt.tasks.first;
+package by.bsuir.dshparko.wt.tasks.first.task4;
 
 import java.util.Scanner;
 
-public class FifthTask {
+public class FourthTask {
     public static void main(String[] argv) {
         int n = inputParameter();
         int array[] = new int[n];
         array = fillArray(array, n);
-        int count = check(array);
-        outputMessage(count);
+        excessElementsOfArray(array);
     }
 
-//добавить проверки
-    public static int check(int[] array) {
-        int count = 0;
-        int maxPrev = Integer.MIN_VALUE;
-        for (int i = 1; i < array.length; i++) {
-            if (maxPrev <array[i-1]){
-                maxPrev = array[i-1];
+    public static void excessElementsOfArray(int [] array){
+        for(int i = 0 ; i<array.length;i++){
+            if(checkPrime(array[i])){
+                outputMessage(i);
             }
-                if (!(array[i - 1] < array[i])) {
-
-                    count++;
-                }
         }
-        return count;
+    }
+
+    public static boolean checkPrime(int var) {
+        boolean isPrime = true;
+        int temp;
+        for (int i = 2; i < var / 2; i++) {
+            temp = var % i;
+            if (temp == 0) {
+                isPrime = false;
+            }
+        }
+        return isPrime;
     }
 
     public static int[] fillArray(int[] array, int n) {
@@ -50,4 +53,3 @@ public class FifthTask {
         return var;
     }
 }
-

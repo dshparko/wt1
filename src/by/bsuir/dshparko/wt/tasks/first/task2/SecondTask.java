@@ -1,4 +1,4 @@
-package by.bsuir.dshparko.wt.tasks.first;
+package by.bsuir.dshparko.wt.tasks.first.task2;
 
 import java.util.Scanner;
 
