@@ -1,43 +1,22 @@
 package by.bsuir.dshparko.wt.tasks.first.task6;
 
-import java.util.Scanner;
+
+import static by.bsuir.dshparko.wt.tasks.first.printer.PrintData.printIntMatrix;
+import static by.bsuir.dshparko.wt.tasks.first.scanner.InputData.fillIntArray;
+import static by.bsuir.dshparko.wt.tasks.first.scanner.InputData.inputInt;
 
 public class SixthTask {
     public static void main(String[] argv) {
-        int n = inputParameter();
-        int array[][] = new int[n][n];
-        inputX(n,array[n]);
-        outputMessage(6);
-    }
-//сдвинуть массив влево и записать в матрицу
-    public static int[][] inputX(int count,int array[][],int arr[]) {
-        for(int i =1; i < count;i++){
-
-            array[i]=arr;
-        }
-        return array;
-    }
-
-    public static int[] inputX(int count,int array[]) {
-        for(int i =0; i < count;i++){
-            array[i] = inputParameter();
-        }
-        return array;
-    }
-
-    public static void outputMessage(int str) {
-        System.out.println(str);
-    }
-
-    public static int inputParameter() {
-        int var;
-        Scanner sc = new Scanner(System.in);
-        String inLine = sc.nextLine();
+        System.out.println("Введите размер массива: ");
+        int n = inputInt();
+        System.out.println("Введите элементы массива: ");
+        int array[] = fillIntArray(n);
         try {
-            var = Integer.parseInt(inLine);
-        } catch (NumberFormatException e) {
-            throw e;
+            int[][] matrix = Matrix.fillMatrix(array);
+            printIntMatrix(matrix);
+
+        }catch( IllegalArgumentException e) {
+            System.out.println( e.getMessage() );
         }
-        return var;
     }
 }

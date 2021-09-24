@@ -1,4 +1,6 @@
-package by.bsuir.dshparko.wt.tasks.first;
+package by.bsuir.dshparko.wt.tasks.first.task9;
+
+import by.bsuir.dshparko.wt.tasks.first.task9.Ball;
 
 import java.util.LinkedList;
 
