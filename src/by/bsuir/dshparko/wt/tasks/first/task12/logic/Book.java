@@ -45,7 +45,7 @@ public class Book implements Cloneable, Comparable<Book> {
 
     @Override
     public String toString() {
-        return this.getClass() + ": " + "title: " + this.title + " author: " + this.author + " price: " + this.price + " edition: " + Book.edition;
+        return this.getClass() + ": " + "название: " + this.title + " автор: " + this.author + " цена: " + this.price + " издание: " + Book.edition;
     }
 
     @Override

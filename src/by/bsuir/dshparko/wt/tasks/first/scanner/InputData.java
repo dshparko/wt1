@@ -37,13 +37,13 @@ public class InputData {
         return array;
     }
 
-    public  static double[] inputDoubleArray(int size) {
+    public static double[] inputDoubleArray(int size) {
 
         double[] array = new double[size];
 
         for (int i = 0; i < size; i++) {
-            System.out.print("Enter " + (i + 1) + " element out of " + array.length + ": ");
-            array[i] =  inputDouble();
+            System.out.print("Введите " + (i + 1) + " элемент из " + array.length + ": ");
+            array[i] = inputDouble();
         }
 
         return array;
@@ -79,20 +79,20 @@ public class InputData {
         return result;
     }
 
-    public  static Book setInformationAboutBook() {
+    public static Book setInformationAboutBook() {
 
         String author;
         String title;
         int price;
         int isbn;
 
-        System.out.print("Enter book title: ");
+        System.out.print("Введите название книги: ");
         title = InputData.inputString();
-        System.out.print("Enter book author: ");
+        System.out.print("Введите автора книги: ");
         author = InputData.inputString();
-        System.out.print("Enter book price: ");
+        System.out.print("Введите цену книги: ");
         price = InputData.inputPositiveInt();
-        System.out.print("Enter book ISBN: ");
+        System.out.print("Введите ISBN книги: ");
         isbn = InputData.inputPositiveInt();
 
         return new Book(title, author, price, isbn);

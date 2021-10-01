@@ -36,7 +36,7 @@ public class Runner {
 
         System.out.println("Равны ли книги? " + book1.equals(book2));
 
-        System.out.println("Ñompare books: " + book1.compareTo(book2));
+        System.out.println("Сравните книг: " + book1.compareTo(book2));
 
     }
 }
