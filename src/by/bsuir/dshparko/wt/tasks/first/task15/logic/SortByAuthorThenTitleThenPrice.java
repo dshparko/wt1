@@ -1,18 +1,18 @@
-package by.bsuir.dshparko.wt.tasks.first.task15;
+package by.bsuir.dshparko.wt.tasks.first.task15.logic;
 
 import by.bsuir.dshparko.wt.tasks.first.task12.logic.Book;
 
 import java.util.Comparator;
 
-public class SortByTitleThenAuthor implements Comparator<Book> {
+public class SortByAuthorThenTitleThenPrice implements Comparator<Book> {
 
     private Comparator<Book> comparator;
 
-    public SortByTitleThenAuthor() {
+    public SortByAuthorThenTitleThenPrice() {
 
-        comparator = new SortByTitle().thenComparing(new SortByAuthor());
+        comparator = new SortByAuthorThenTitle().thenComparing(new SortByPrice());
+
     }
-
 
     @Override
     public int compare(Book book1, Book book2) {

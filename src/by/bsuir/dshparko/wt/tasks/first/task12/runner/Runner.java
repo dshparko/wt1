@@ -25,7 +25,7 @@ public class Runner {
 
         } catch (IllegalArgumentException e) {
 
-            System.out.println( e.getMessage());
+            System.out.println(e.getMessage());
             return;
         }
 

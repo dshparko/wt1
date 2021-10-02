@@ -40,7 +40,7 @@ public class Start {
 
         System.out.println("Информация о 1 книге " + book1.toString());
         System.out.println("Информация о 2 книге " + book2.toString());
-        System.out.println("Хэш-код книги:");
+        System.out.println("Хэш-коды книг:");
         System.out.println("Хэш-код 1 книги: " + book1.hashCode());
         System.out.println("Хэш-код 2 книги: " + book2.hashCode());
 

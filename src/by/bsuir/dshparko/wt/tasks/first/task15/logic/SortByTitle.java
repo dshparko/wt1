@@ -1,18 +1,11 @@
-package by.bsuir.dshparko.wt.tasks.first.task15;
+package by.bsuir.dshparko.wt.tasks.first.task15.logic;
 
 import by.bsuir.dshparko.wt.tasks.first.task12.logic.Book;
 
 import java.util.Comparator;
 
-public class SortByAuthorThenTitleThenPrice implements Comparator<Book> {
+public class SortByTitle implements Comparator<Book> {
 
-    private Comparator<Book> comparator;
-
-    public SortByAuthorThenTitleThenPrice() {
-
-        comparator = new SortByAuthorThenTitle().thenComparing(new SortByPrice());
-
-    }
 
     @Override
     public int compare(Book book1, Book book2) {
@@ -20,6 +13,8 @@ public class SortByAuthorThenTitleThenPrice implements Comparator<Book> {
             throw new IllegalArgumentException("Обе книги должны иметь какое-либо значение");
         }
 
-        return comparator.compare(book1, book2);
+        return book1.getTitle().compareTo(book2.getTitle());
     }
+
+
 }
