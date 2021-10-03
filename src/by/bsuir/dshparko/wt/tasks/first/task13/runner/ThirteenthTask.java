@@ -5,7 +5,7 @@ import by.bsuir.dshparko.wt.tasks.first.task13.logic.ProgrammerBook;
 
 import static by.bsuir.dshparko.wt.tasks.first.scanner.InputData.*;
 
-public class Start {
+public class ThirteenthTask {
     public static void main(String[] args) {
         Book book1;
         Book book2;

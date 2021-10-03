@@ -1,6 +1,6 @@
 package by.bsuir.dshparko.wt.tasks.first.scanner;
 
-//import by.bsuir.dshparko.wt.tasks.first.task12.logic.Book;
+import by.bsuir.dshparko.wt.tasks.first.task12.logic.Book;
 
 import java.util.Scanner;
 
@@ -78,7 +78,7 @@ public class InputData {
 
         return result;
     }
-/*
+
     public static Book setInformationAboutBook() {
 
         String author;
@@ -98,6 +98,6 @@ public class InputData {
         return new Book(title, author, price, isbn);
     }
 
-*/
+
 
 }

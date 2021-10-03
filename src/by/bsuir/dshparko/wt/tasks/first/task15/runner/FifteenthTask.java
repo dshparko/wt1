@@ -10,7 +10,7 @@ import by.bsuir.dshparko.wt.tasks.first.task15.logic.SortByTitleThenAuthor;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class StartSort {
+public class FifteenthTask {
 
     public static void main(String[] args) {
 
