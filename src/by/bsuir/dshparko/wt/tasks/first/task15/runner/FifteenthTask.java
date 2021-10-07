@@ -37,7 +37,7 @@ public class FifteenthTask {
             bookList.sort(comparator);
             System.out.println(comparator.getClass().getName());
             for (Book book : bookList) {
-                System.out.println("title: " + book.getTitle() + " author: " + book.getAuthor() + " price: " + book.getPrice()
+                System.out.println("название: " + book.getTitle() + " автор: " + book.getAuthor() + " цена: " + book.getPrice()
                 );
 
             }
